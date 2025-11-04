@@ -11,6 +11,6 @@ http://example.com/2025/10/31/This-is-absolutely-beautiful-Gemini-Nano-Banana-Pr
 http://example.com/tags/
 http://example.com/categories/
 http://example.com/
-http://example.com/tags/Gemini-Nano-Banana/
 http://example.com/tags/Ai/
+http://example.com/tags/Gemini-Nano-Banana/
 http://example.com/categories/Ai/
