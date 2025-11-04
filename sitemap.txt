@@ -1,4 +1,4 @@
-http://example.com/wiki/ai/
+http://example.com/wiki/hotker/
 http://example.com/2025/11/04/Ai-Agent-%E8%88%86%E6%83%85%E5%88%86%E6%9E%90/
 http://example.com/about/
 http://example.com/friends/
@@ -12,6 +12,6 @@ http://example.com/2025/10/31/This-is-absolutely-beautiful-Gemini-Nano-Banana-Pr
 http://example.com/tags/
 http://example.com/categories/
 http://example.com/
-http://example.com/tags/Ai/
 http://example.com/tags/Gemini-Nano-Banana/
+http://example.com/tags/Ai/
 http://example.com/categories/Ai/
