@@ -1,5 +1,5 @@
-http://example.com/friends/
 http://example.com/about/
+http://example.com/friends/
 http://example.com/2025/11/01/deep-white-plunging-V-neck-lace-sequined-evening-gown/
 http://example.com/2025/11/01/Editorial-3x3-photo-grid-in-a-clean-soft-beige-studio/
 http://example.com/2025/11/01/Paired-with-light-blue-high-waisted-flared-jeans-and-a-pair-of-clean-white-sneakers/
