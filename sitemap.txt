@@ -1,3 +1,5 @@
+http://example.com/2025/11/06/AI%E7%94%9F%E5%9B%BE%E6%8F%90%E7%A4%BA%E8%AF%8D%E7%9A%84%E5%88%86%E5%B1%82%E6%8E%A7%E5%88%B6%E8%A1%A8%EF%BC%88%E8%A7%86%E9%A2%91%E4%B9%9F%E6%98%AF%E7%9B%B8%E9%80%9A%E7%9A%84%EF%BC%89/
+http://example.com/notes/%E6%B4%BB%E4%B8%8D%E4%BC%9A%E6%80%BB%E6%98%AF%E5%A6%82%E6%84%8F
 http://example.com/2025/11/01/deep-white-plunging-V-neck-lace-sequined-evening-gown/
 http://example.com/2025/11/05/Create-a-Portrait-of-yourself-in-sporty-outfit-using-Gemini-Nano-Banana/
 http://example.com/notes/%E7%85%A7%E4%BA%AE%E6%83%B3%E5%8E%BB%E7%9A%84%E5%9C%B0%E6%96%B9
@@ -12,5 +14,7 @@ http://example.com/2025/10/31/This-is-absolutely-beautiful-Gemini-Nano-Banana-Pr
 http://example.com/tags/
 http://example.com/categories/
 http://example.com/
+http://example.com/tags/Ai/
 http://example.com/tags/Gemini-Nano-Banana/
+http://example.com/categories/Prompt/
 http://example.com/categories/Ai/
