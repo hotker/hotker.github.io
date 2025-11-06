@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-11-06T15:16:32.760Z</updated>
+  <updated>2025-11-05T16:51:27.910Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,31 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>AI生图提示词的分层控制表（视频也是相通的）</title>
-    <link href="http://example.com/2025/11/06/AI%E7%94%9F%E5%9B%BE%E6%8F%90%E7%A4%BA%E8%AF%8D%E7%9A%84%E5%88%86%E5%B1%82%E6%8E%A7%E5%88%B6%E8%A1%A8%EF%BC%88%E8%A7%86%E9%A2%91%E4%B9%9F%E6%98%AF%E7%9B%B8%E9%80%9A%E7%9A%84%EF%BC%89/"/>
-    <id>http://example.com/2025/11/06/AI%E7%94%9F%E5%9B%BE%E6%8F%90%E7%A4%BA%E8%AF%8D%E7%9A%84%E5%88%86%E5%B1%82%E6%8E%A7%E5%88%B6%E8%A1%A8%EF%BC%88%E8%A7%86%E9%A2%91%E4%B9%9F%E6%98%AF%E7%9B%B8%E9%80%9A%E7%9A%84%EF%BC%89/</id>
-    <published>2025-11-06T05:44:18.000Z</published>
-    <updated>2025-11-06T15:16:32.760Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="主体-环境-风格。"><a href="#主体-环境-风格。" class="headerlink" title="主体 + 环境 + 风格。"></a>主体 + 环境 + 风格。</h1><p>其中“风格”，一语定乾坤。</p><p><img src="https://img.hotker.com/file/1762408021828_G4UHkM4XIAAfsDJ.png" alt="G4UHkM4XIAAfsDJ.png"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;主体-环境-风格。&quot;&gt;&lt;a href=&quot;#主体-环境-风格。&quot; class=&quot;headerlink&quot; title=&quot;主体 + 环境 + 风格。&quot;&gt;&lt;/a&gt;主体 + 环境 + 风格。&lt;/h1&gt;&lt;p&gt;其中“风格”，一语定乾坤。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;htt</summary>
-      
-    
-    
-    
-    <category term="Prompt" scheme="http://example.com/categories/Prompt/"/>
-    
-    
-    <category term="Ai" scheme="http://example.com/tags/Ai/"/>
-    
-  </entry>
   
   <entry>
     <title>Create a Portrait of yourself in sporty outfit using Gemini Nano Banana</title>

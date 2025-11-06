@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2025/11/06/AI%E7%94%9F%E5%9B%BE%E6%8F%90%E7%A4%BA%E8%AF%8D%E7%9A%84%E5%88%86%E5%B1%82%E6%8E%A7%E5%88%B6%E8%A1%A8%EF%BC%88%E8%A7%86%E9%A2%91%E4%B9%9F%E6%98%AF%E7%9B%B8%E9%80%9A%E7%9A%84%EF%BC%89/</loc>
-    
-    <lastmod>2025-11-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/notes/%E6%B4%BB%E4%B8%8D%E4%BC%9A%E6%80%BB%E6%98%AF%E5%A6%82%E6%84%8F</loc>
     
     <lastmod>2025-11-06</lastmod>
@@ -146,13 +137,6 @@
 
   
   <url>
-    <loc>http://example.com/tags/Ai/</loc>
-    <lastmod>2025-11-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/tags/Gemini-Nano-Banana/</loc>
     <lastmod>2025-11-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -160,13 +144,6 @@
   </url>
   
 
-  
-  <url>
-    <loc>http://example.com/categories/Prompt/</loc>
-    <lastmod>2025-11-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
   <url>
     <loc>http://example.com/categories/Ai/</loc>
