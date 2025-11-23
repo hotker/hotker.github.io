@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/notes/%E6%AF%8F%E4%B8%AA%E4%BA%BA%E5%BF%83%E4%B8%AD%E9%83%BD%E6%9C%89%E4%B8%80%E5%9B%A2%E7%81%AB</loc>
+    
+    <lastmod>2025-11-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/2025/11/23/2025-11-23-cursor-auto-generate-blog-content/</loc>
     
     <lastmod>2025-11-23</lastmod>
