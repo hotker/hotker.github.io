@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2025/11/23/2025-11-23-cursor-auto-generate-blog-content/</loc>
+    
+    <lastmod>2025-11-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/2025/11/09/5%E4%B8%AA-ChatGPT-%E6%8F%90%E7%A4%BA%E8%AF%8D%E6%8A%80%E5%B7%A7%EF%BC%8C%E5%B8%AE%E4%BD%A0%E6%8F%90%E5%8D%87%E5%AF%B9%E8%AF%9D%E6%95%88%E7%8E%87/</loc>
     
     <lastmod>2025-11-09</lastmod>
@@ -166,7 +175,7 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2025-11-18</lastmod>
+    <lastmod>2025-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -174,14 +183,42 @@
   
   <url>
     <loc>http://example.com/tags/Prompt/</loc>
-    <lastmod>2025-11-18</lastmod>
+    <lastmod>2025-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/Cursor/</loc>
+    <lastmod>2025-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/AI%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2025-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/%E5%8D%9A%E5%AE%A2%E5%86%99%E4%BD%9C/</loc>
+    <lastmod>2025-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2025-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/Gemini-Nano-Banana/</loc>
-    <lastmod>2025-11-18</lastmod>
+    <lastmod>2025-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -190,14 +227,21 @@
   
   <url>
     <loc>http://example.com/categories/Prompt/</loc>
-    <lastmod>2025-11-18</lastmod>
+    <lastmod>2025-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2025-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/Ai/</loc>
-    <lastmod>2025-11-18</lastmod>
+    <lastmod>2025-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
