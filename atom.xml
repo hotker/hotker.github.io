@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-11-24T13:43:03.319Z</updated>
+  <updated>2025-11-24T14:49:56.581Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,67 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>重磅！你的 Prompt 工程白学了？“懒人提示词”技巧，让AI瞬间懂你</title>
+    <link href="http://example.com/2025/11/24/2025-11-24-%E9%87%8D%E7%A3%85%EF%BC%81%E4%BD%A0%E7%9A%84-Prompt-%E5%B7%A5%E7%A8%8B%E7%99%BD%E5%AD%A6%E4%BA%86%EF%BC%9F%E2%80%9C%E6%87%92%E4%BA%BA%E6%8F%90%E7%A4%BA%E8%AF%8D%E2%80%9D%E6%8A%80%E5%B7%A7%EF%BC%8C%E8%AE%A9AI%E7%9E%AC%E9%97%B4%E6%87%82%E4%BD%A0/"/>
+    <id>http://example.com/2025/11/24/2025-11-24-%E9%87%8D%E7%A3%85%EF%BC%81%E4%BD%A0%E7%9A%84-Prompt-%E5%B7%A5%E7%A8%8B%E7%99%BD%E5%AD%A6%E4%BA%86%EF%BC%9F%E2%80%9C%E6%87%92%E4%BA%BA%E6%8F%90%E7%A4%BA%E8%AF%8D%E2%80%9D%E6%8A%80%E5%B7%A7%EF%BC%8C%E8%AE%A9AI%E7%9E%AC%E9%97%B4%E6%87%82%E4%BD%A0/</id>
+    <published>2025-11-24T14:49:00.000Z</published>
+    <updated>2025-11-24T14:49:56.581Z</updated>
+    
+    <content type="html"><![CDATA[<p>但随着模型越来越强，你会发现另一件事：</p><blockquote><p><strong>最有效、最高产、最容易上手的提示词，往往是最简单的那一句。</strong></p></blockquote><p>注意啊，一定要是推理模型）</p><p>我后面发现，像我这样的懒人，就适合这一个技巧。</p><img src="https://img.hotker.com/file/1763995501787_image.png" alt="image" style="zoom:25%;" /><p>那么啥是 Hotker Prompt 呢？</p><p>传统提示词：</p><blockquote><p>你告诉模型怎么做。</p></blockquote><p>Hotker Prompt：</p><blockquote><p>你告诉模型“要什么结果”，让它自己决定“怎么做”。</p></blockquote><p>这像是：</p><ul><li>传统 Prompt &#x3D; “你写代码”</li><li>Hotker Prompt &#x3D; “你提需求，AI 写方案 + 写代码”</li></ul><img src="https://img.hotker.com/file/1763995633564_image__1_.png" alt="image (1)" style="zoom:25%;" /><p>我一般让 AI 开始写作、编程等复杂任务前，我会先这样</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">优化提示词：「这里写你的口语化提示词」</span><br></pre></td></tr></table></figure><p>就这一步，AI 的输出质量大幅度提高</p><p>为啥？</p><p>很多人用AI时都陷入“信息过载”误区，觉得写得越详细越好，却忽略了AI的核心需求——<strong>明确的核心目标+清晰的场景边界</strong>，而非杂乱无章的信息堆砌</p><p>而这个办法，就是很好的帮助我们利用 AI 自己的能力：任务、模式归纳和自我拓展</p><p>AI 自己来：推断你想要什么、设计结构、优化逻辑、选择写作风格、自动扩展深度、输出一个“接近最优解”的结果，我就问问以上这些环节，谁会做的比 AI 好，谁会在同样质量下比 AI 快？</p><p><img src="https://img.hotker.com/file/1763995670772_image__2_.png" alt="image (2)"></p><p>试用场景也很广</p><p>几乎适用于所有“创作类”“结构化输出”的任务：</p><ul><li>写文章</li><li>写论文</li><li>写脚本</li><li>写帖子</li><li>写计划书</li><li>写商业报告</li><li>生成运营方案</li><li>生成 PPT 大纲</li><li>课程设计</li><li>产品文案</li><li>故事&#x2F;营销文案</li><li>数据分析结论</li></ul><p>它的核心。就是把绝大部分结构化的任务拆解、输出格式、写作目标……全部交给 AI 自己决定，而不是你来写</p><p>当然了，如果你需要更加精确的，让 AI 按照你的设计行动，还是要学习专业的 PE，以及 Spec</p><p>但是对于小白用户，Lazy Prompt 绝对是最佳入门首选</p><p>最后，还有一招</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">请你自我优化，充分运用批评与自我批评这个武器，然后给出更好的版本</span><br></pre></td></tr></table></figure><p>经过了这一招，谷歌终于给了我一个一劳永逸的提示词技巧：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">请你不要执行接下来的任务。你现在的身份是世界顶级的提示工程专家，请仔细阅读我提供的【初始提示词】，并从清晰度、专业度、结构化、模型适应性四个维度进行批判性优化。请仅输出优化后的提示词内容，并用 ``` 包裹起来。</span><br></pre></td></tr></table></figure><p>我道心破碎了，这个方法其实不叫Hotker Prompt，其实叫：<strong>两步提示法 (Two-Step Prompting)</strong></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;但随着模型越来越强，你会发现另一件事：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;最有效、最高产、最容易上手的提示词，往往是最简单的那一句。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;注意啊，一定要是推理模型）&lt;/p&gt;
+&lt;p&gt;我后面发现，像我</summary>
+      
+    
+    
+    
+    <category term="知识库" scheme="http://example.com/categories/%E7%9F%A5%E8%AF%86%E5%BA%93/"/>
+    
+    
+    <category term="Ai" scheme="http://example.com/tags/Ai/"/>
+    
+    <category term="知识库" scheme="http://example.com/tags/%E7%9F%A5%E8%AF%86%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何打造 100 字以内的极简提示词？</title>
+    <link href="http://example.com/2025/11/24/2025-11-24-%E5%A6%82%E4%BD%95%E6%89%93%E9%80%A0-100-%E5%AD%97%E4%BB%A5%E5%86%85%E7%9A%84%E6%9E%81%E7%AE%80%E6%8F%90%E7%A4%BA%E8%AF%8D%EF%BC%9F/"/>
+    <id>http://example.com/2025/11/24/2025-11-24-%E5%A6%82%E4%BD%95%E6%89%93%E9%80%A0-100-%E5%AD%97%E4%BB%A5%E5%86%85%E7%9A%84%E6%9E%81%E7%AE%80%E6%8F%90%E7%A4%BA%E8%AF%8D%EF%BC%9F/</id>
+    <published>2025-11-24T14:35:00.000Z</published>
+    <updated>2025-11-24T14:40:12.140Z</updated>
+    
+    <content type="html"><![CDATA[<p>我一直在思考，那么多提示词技巧，好难记，有没有什么 100 字以内的提示词教程？</p><p>所以我问了很多 AI，让他们给我一个又强大又简短的提示词，不能超过 100 字</p><p>后来我发现，我们在提示词实践过程中，可以尽可能的重复“压缩-解压”这个过程，不断的和 AI 玩耍，玩耍的过程中，你会发现一段提示词中有些是真的有作用，有些文本是在“摸鱼”</p><p>对于这些文本，大胆删除即可</p><p>你的心态一定要稳，大不了就删除，大不了再加回来，重点放在尝试上，一直不断的尝试！保持这种氛围！</p><h1 id="Jackywine-极简提示词学习法"><a href="#Jackywine-极简提示词学习法" class="headerlink" title="Jackywine 极简提示词学习法"></a>Jackywine 极简提示词学习法</h1><h1 id="Grok"><a href="#Grok" class="headerlink" title="Grok"></a>Grok</h1><p><strong>极简提示词教程（100字）</strong></p><p>提示词（Prompt）是与AI交互的关键，清晰、具体、结构化能提升输出质量。</p><ol><li><strong>明确目标</strong>：描述任务，如“写100字故事”或“分析数据”。</li><li><strong>提供细节</strong>：指明格式、语气、背景，如“正式、简洁”或“以科幻为主题”。</li><li><strong>设置约束</strong>：字数、语言、风格，如“50字以内，中文”。</li><li><strong>迭代优化</strong>：根据输出调整提示，补充或简化。</li><li><strong>示例</strong>：如“用幽默语气写一则200字广告，目标是年轻人”。</li></ol><p>练习：尝试不同提示，观察AI回应，逐步精炼！</p><h1 id="豆包："><a href="#豆包：" class="headerlink" title="豆包："></a>豆包：</h1><p>极简提示词教程（2025 版）：</p><ol><li>明确目标：直接说明任务，如 “生成 3 条环保主题汽车广告语”。</li><li>结构化指令：包含角色（如 “资深教育专家”）、指令（“设计数学题解析框架”）、约束（“基于布鲁姆认知目标分类法”）。</li><li>关键词权重：靠前位置用具体词汇（如 “可再生能源”），重复或加粗强调核心需求。</li><li>多模态协同：结合图文提示，如 “分析 CT 扫描图并输出缺陷坐标”。</li><li>迭代优化：通过 A&#x2F;B 测试调整，例如追加 “将技术术语转化为通俗解释”。</li><li>反向提示：排除干扰项，如 “避免使用复杂动画”。</li></ol><p>示例：“以麦肯锡 MECE 原则分析新能源汽车价格战，按电池成本 &#x2F; 政策补贴 &#x2F; 品牌溢价划分维度，对比特斯拉 &#x2F; 比亚迪 2023 年财报数据，输出带战略建议的 PPT 大纲”。</p><h1 id="Google-Gemini-2-5-Pro"><a href="#Google-Gemini-2-5-Pro" class="headerlink" title="Google Gemini 2.5 Pro"></a>Google Gemini 2.5 Pro</h1><p><strong>极简提示词教程 (98字):</strong></p><p>想让AI懂你？提示词是关键！</p><ol><li><strong>明确目标:</strong> 你想要什么？(总结、写作、编程、回答问题等)</li><li><strong>提供背景:</strong> 给出必要信息和上下文。</li><li><strong>指令清晰:</strong> 要求越具体越好 (格式、语气、长度、角色扮演)。</li><li><strong>逐步细化:</strong> 如果结果不理想，尝试补充信息或调整问法。</li><li><strong>尝试不同风格:</strong> 简单句、复杂句、列表等都可试试。</li></ol><p>记住：精准+背景 &#x3D; 好结果！</p><h1 id="ChatGPT："><a href="#ChatGPT：" class="headerlink" title="ChatGPT："></a>ChatGPT：</h1><p>明确角色 指定模型</p><p>设定目标 输出预期</p><p>提供示例 输入样例</p><p>控制风格 语气口吻</p><p>限制长度 字数范围</p><p>要求格式 Markdown&#x2F;JSON</p><p>分步执行 思路拆解</p><h1 id="Claude"><a href="#Claude" class="headerlink" title="Claude"></a>Claude</h1><h2 id="核心技巧"><a href="#核心技巧" class="headerlink" title="核心技巧"></a>核心技巧</h2><ol><li><strong>明确角色</strong>: 为AI指定专业身份（如”作为金融分析师”）</li><li><strong>详细要求</strong>: 明确输出格式、长度和风格</li><li><strong>任务分解</strong>: 将复杂问题拆分为多个小步骤</li><li><strong>示例引导</strong>: 提供优质样例作为参考标准</li><li><strong>反馈迭代</strong>: 根据AI回应持续优化提示词</li></ol><h2 id="提示词框架"><a href="#提示词框架" class="headerlink" title="提示词框架"></a>提示词框架</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">角色 + 任务 + 格式要求 + 参考例子 + 评判标准</span><br></pre></td></tr></table></figure><h1 id="总结-1-下"><a href="#总结-1-下" class="headerlink" title="总结 1 下"></a>总结 1 下</h1><p>表面上是教你复制粘贴就能用的提示词，实际上是想你能拥有一种心态：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">大胆尝试，不怕玩坏，保持氛围，持续进步</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;我一直在思考，那么多提示词技巧，好难记，有没有什么 100 字以内的提示词教程？&lt;/p&gt;
+&lt;p&gt;所以我问了很多 AI，让他们给我一个又强大又简短的提示词，不能超过 100 字&lt;/p&gt;
+&lt;p&gt;后来我发现，我们在提示词实践过程中，可以尽可能的重复“压缩-解压”这个过程，不断的和</summary>
+      
+    
+    
+    
+    <category term="知识库" scheme="http://example.com/categories/%E7%9F%A5%E8%AF%86%E5%BA%93/"/>
+    
+    
+    <category term="Ai" scheme="http://example.com/tags/Ai/"/>
+    
+    <category term="知识库" scheme="http://example.com/tags/%E7%9F%A5%E8%AF%86%E5%BA%93/"/>
+    
+    <category term="Prompt" scheme="http://example.com/tags/Prompt/"/>
+    
+  </entry>
   
   <entry>
     <title>A serene, dreamy close-up portrait of a young East Asian woman with a gentle</title>
@@ -62,11 +123,11 @@
     <category term="Prompt" scheme="http://example.com/categories/Prompt/"/>
     
     
-    <category term="Prompt" scheme="http://example.com/tags/Prompt/"/>
-    
     <category term="Ai" scheme="http://example.com/tags/Ai/"/>
     
     <category term="Gemini Nano Banana" scheme="http://example.com/tags/Gemini-Nano-Banana/"/>
+    
+    <category term="Prompt" scheme="http://example.com/tags/Prompt/"/>
     
   </entry>
   
