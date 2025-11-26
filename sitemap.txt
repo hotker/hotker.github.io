@@ -51,7 +51,7 @@ http://example.com/categories/%E7%9F%A5%E8%AF%86%E5%BA%93/
 http://example.com/categories/Prompt/
 http://example.com/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/
 http://example.com/categories/%E5%86%99%E4%BD%9C%E6%8C%87%E5%8D%97/
-http://example.com/categories/Gemini-Nano-Banana/
 http://example.com/categories/Ai/
+http://example.com/categories/Gemini-Nano-Banana/
 http://example.com/categories/Ai/Prompt/
 http://example.com/categories/%E7%A7%91%E6%8A%80/
