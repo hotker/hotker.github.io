@@ -308,6 +308,20 @@
 
   
   <url>
+    <loc>http://example.com/tags/Ai/</loc>
+    <lastmod>2025-12-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/Gemini-Nano-Banana/</loc>
+    <lastmod>2025-12-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/tags/%E7%9F%A5%E8%AF%86%E5%BA%93/</loc>
     <lastmod>2025-12-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -343,13 +357,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/Ai/</loc>
-    <lastmod>2025-12-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/tags/Prompt/</loc>
     <lastmod>2025-12-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -358,13 +365,6 @@
   
   <url>
     <loc>http://example.com/tags/%E9%A1%B6%E7%BA%A7Prompt/</loc>
-    <lastmod>2025-12-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/tags/Gemini-Nano-Banana/</loc>
     <lastmod>2025-12-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -457,6 +457,13 @@
 
   
   <url>
+    <loc>http://example.com/categories/Prompt/</loc>
+    <lastmod>2025-12-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/categories/%E7%9F%A5%E8%AF%86%E5%BA%93/</loc>
     <lastmod>2025-12-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -479,13 +486,6 @@
   
   <url>
     <loc>http://example.com/categories/%E4%BF%A1%E6%81%AF%E9%BB%91%E6%B4%9E/</loc>
-    <lastmod>2025-12-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/categories/Prompt/</loc>
     <lastmod>2025-12-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
