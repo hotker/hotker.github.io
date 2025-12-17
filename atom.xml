@@ -285,9 +285,9 @@
     
     <category term="Ai" scheme="http://example.com/tags/Ai/"/>
     
-    <category term="Prompt" scheme="http://example.com/tags/Prompt/"/>
-    
     <category term="知识库" scheme="http://example.com/tags/%E7%9F%A5%E8%AF%86%E5%BA%93/"/>
+    
+    <category term="Prompt" scheme="http://example.com/tags/Prompt/"/>
     
   </entry>
   
