@@ -526,9 +526,9 @@
     <category term="AI资讯" scheme="http://example.com/categories/AI%E8%B5%84%E8%AE%AF/"/>
     
     
-    <category term="AI编程" scheme="http://example.com/tags/AI%E7%BC%96%E7%A8%8B/"/>
-    
     <category term="Claude" scheme="http://example.com/tags/Claude/"/>
+    
+    <category term="AI编程" scheme="http://example.com/tags/AI%E7%BC%96%E7%A8%8B/"/>
     
     <category term="代码审查" scheme="http://example.com/tags/%E4%BB%A3%E7%A0%81%E5%AE%A1%E6%9F%A5/"/>
     
