@@ -1,0 +1,921 @@
+
+<!DOCTYPE html><html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.33.1" theme-name="Stellar" theme-version="1.33.1">
+  
+  
+  <meta name="generator" content="Hexo 8.1.1">
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
+  <meta name="theme-color" content="#f9fafb">
+  <title>一文带你搞懂JSON提示词！JSON提示词：让AI秒懂你 - Hotker</title>
+
+  
+    <meta name="description" content="为什么AI大佬都在用JSON提示词一文带你搞懂JSON提示词！ 你辛辛苦苦调了1天的Prompt提示词，小作文写得声泪俱下，AI还是时而听话时而犯浑，输出格式崩得像车祸现场，你气得想砸键盘。😭 而旁边的家伙，随手贴了1段看着像乱码的 JSON 提示词，丢进去，3秒钟，AI像被打了鸡血一样：角色稳得一批 ，格式严丝合缝 ，再难的任务也一次过甚至连标点符号都跟你要求的一模一样。 不会 JSON 提示">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一文带你搞懂JSON提示词！JSON提示词：让AI秒懂你">
+<meta property="og:url" content="http://example.com/2025/11/26/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E6%90%9E%E6%87%82JSON%E6%8F%90%E7%A4%BA%E8%AF%8D%EF%BC%81JSON%E6%8F%90%E7%A4%BA%E8%AF%8D%EF%BC%9A%E8%AE%A9AI%E7%A7%92%E6%87%82%E4%BD%A0/">
+<meta property="og:site_name" content="Hotker">
+<meta property="og:description" content="为什么AI大佬都在用JSON提示词一文带你搞懂JSON提示词！ 你辛辛苦苦调了1天的Prompt提示词，小作文写得声泪俱下，AI还是时而听话时而犯浑，输出格式崩得像车祸现场，你气得想砸键盘。😭 而旁边的家伙，随手贴了1段看着像乱码的 JSON 提示词，丢进去，3秒钟，AI像被打了鸡血一样：角色稳得一批 ，格式严丝合缝 ，再难的任务也一次过甚至连标点符号都跟你要求的一模一样。 不会 JSON 提示">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img.hotker.com/file/1765115072720_Generated_Image_December_05__2025_-_12_52PM.jpeg">
+<meta property="article:published_time" content="2025-11-26T14:40:00.000Z">
+<meta property="article:modified_time" content="2026-01-12T15:31:06.572Z">
+<meta property="article:author" content="Hotker">
+<meta property="article:tag" content="AI提示词">
+<meta property="article:tag" content="Ai">
+<meta property="article:tag" content="Prompt">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://img.hotker.com/file/1765115072720_Generated_Image_December_05__2025_-_12_52PM.jpeg">
+  
+  
+  
+  <meta name="keywords" content="Ai,Prompt,AI提示词">
+
+  <!-- feed -->
+  
+    <link rel="alternate" href="/atom.xml" title="Hotker" type="application/atom+xml">
+  
+
+  <link rel="stylesheet" href="/css/main.css?v=1.33.1">
+
+
+  
+
+  
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Hotker","sameAs":[],"image":"https://img.hotker.com/file/1765115072720_Generated_Image_December_05__2025_-_12_52PM.jpeg"},"dateCreated":"2025-11-26T22:40:00+08:00","dateModified":"2026-01-12T23:31:06+08:00","datePublished":"2025-11-26T22:40:00+08:00","description":"","headline":"一文带你搞懂JSON提示词！JSON提示词：让AI秒懂你","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/11/26/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E6%90%9E%E6%87%82JSON%E6%8F%90%E7%A4%BA%E8%AF%8D%EF%BC%81JSON%E6%8F%90%E7%A4%BA%E8%AF%8D%EF%BC%9A%E8%AE%A9AI%E7%A7%92%E6%87%82%E4%BD%A0/"},"publisher":{"@type":"Organization","name":"Hotker","sameAs":[],"image":"https://img.hotker.com/file/1765115072720_Generated_Image_December_05__2025_-_12_52PM.jpeg","logo":{"@type":"ImageObject","url":"https://img.hotker.com/file/1765115072720_Generated_Image_December_05__2025_-_12_52PM.jpeg"}},"url":"http://example.com/2025/11/26/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E6%90%9E%E6%87%82JSON%E6%8F%90%E7%A4%BA%E8%AF%8D%EF%BC%81JSON%E6%8F%90%E7%A4%BA%E8%AF%8D%EF%BC%9A%E8%AE%A9AI%E7%A7%92%E6%87%82%E4%BD%A0/","keywords":"Ai, Prompt, AI提示词","thumbnailUrl":"https://img.hotker.com/file/1764169032161_Generated_Image_November_26__2025_-_10_53PM.jpeg","image":1}</script>
+  
+</head>
+<body>
+
+<div class="l_body content" id="start" layout="post" type="tech" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
+
+
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://img.hotker.com/file/1765115072720_Generated_Image_December_05__2025_-_12_52PM.jpeg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main">Hotker</div></a></div></header>
+
+<div class="nav-area">
+
+<nav class="menu dis-select"><a class="nav-item active" title="博客" href="/" style="color:#1BCDFC"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M5.879 2.879C5 3.757 5 5.172 5 8v8c0 2.828 0 4.243.879 5.121C6.757 22 8.172 22 11 22h2c2.828 0 4.243 0 5.121-.879C19 20.243 19 18.828 19 16V8c0-2.828 0-4.243-.879-5.121C17.243 2 15.828 2 13 2h-2c-2.828 0-4.243 0-5.121.879M8.25 17a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75M9 12.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5zM8.25 9A.75.75 0 0 1 9 8.25h6a.75.75 0 0 1 0 1.5H9A.75.75 0 0 1 8.25 9" clip-rule="evenodd"/><path fill="currentColor" d="M5.235 4.058C5 4.941 5 6.177 5 8v8c0 1.823 0 3.058.235 3.942L5 19.924c-.975-.096-1.631-.313-2.121-.803C2 18.243 2 16.828 2 14v-4c0-2.829 0-4.243.879-5.121c.49-.49 1.146-.707 2.121-.803zm13.53 15.884C19 19.058 19 17.822 19 16V8c0-1.823 0-3.059-.235-3.942l.235.018c.975.096 1.631.313 2.121.803C22 5.757 22 7.17 22 9.999v4c0 2.83 0 4.243-.879 5.122c-.49.49-1.146.707-2.121.803z" opacity=".5"/></svg></a><a class="nav-item" title="文档" href="/wiki/" style="color:#3DC550"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M14.25 4.48v3.057c0 .111 0 .27.02.406a.936.936 0 0 0 .445.683a.96.96 0 0 0 .783.072c.13-.04.272-.108.378-.159L17 8.005l1.124.534c.106.05.248.119.378.16a.958.958 0 0 0 .783-.073a.936.936 0 0 0 .444-.683c.021-.136.021-.295.021-.406V3.031c.113-.005.224-.01.332-.013C21.154 2.98 22 3.86 22 4.933v11.21c0 1.112-.906 2.01-2.015 2.08c-.97.06-2.108.179-2.985.41c-1.082.286-1.99 1.068-3.373 1.436c-.626.167-1.324.257-1.627.323V5.174c.32-.079 1.382-.203 1.674-.371c.184-.107.377-.216.576-.323m5.478 8.338a.75.75 0 0 1-.546.91l-4 1a.75.75 0 0 1-.364-1.456l4-1a.75.75 0 0 1 .91.546" clip-rule="evenodd"/><path fill="currentColor" d="M18.25 3.151c-.62.073-1.23.18-1.75.336a8.2 8.2 0 0 0-.75.27v3.182l.75-.356l.008-.005a1.13 1.13 0 0 1 .492-.13c.047 0 .094.004.138.01c.175.029.315.1.354.12l.009.005l.749.356V3.647z"/><path fill="currentColor" d="M12 5.214c-.334-.064-1.057-.161-1.718-.339C8.938 4.515 8.05 3.765 7 3.487c-.887-.234-2.041-.352-3.018-.412C2.886 3.007 2 3.9 2 4.998v11.146c0 1.11.906 2.01 2.015 2.079c.97.06 2.108.179 2.985.41c.486.129 1.216.431 1.873.726c1.005.451 2.052.797 3.127 1.034z" opacity=".5"/><path fill="currentColor" d="M4.273 12.818a.75.75 0 0 1 .91-.545l4 1a.75.75 0 1 1-.365 1.455l-4-1a.75.75 0 0 1-.545-.91m.909-4.545a.75.75 0 1 0-.364 1.455l4 1a.75.75 0 0 0 .364-1.455z"/></svg></a><a class="nav-item" title="探索" href="/notes/" style="color:#FA6400"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M20 12a8 8 0 1 1-16 0a8 8 0 0 1 16 0" opacity=".5"/><path fill="currentColor" d="M17.712 5.453c1.047-.193 2.006-.259 2.797-.152c.77.103 1.536.393 1.956 1.064c.446.714.312 1.542-.012 2.258c-.33.728-.918 1.499-1.672 2.268c-1.516 1.547-3.836 3.226-6.597 4.697c-2.763 1.472-5.495 2.484-7.694 2.92c-1.095.217-2.098.299-2.923.201c-.8-.095-1.6-.383-2.032-1.075c-.47-.752-.296-1.63.07-2.379c.375-.768 1.032-1.586 1.872-2.403L4 12.416c0 .219.083.71.168 1.146c.045.23.09.444.123.596c-.652.666-1.098 1.263-1.339 1.756c-.277.567-.208.825-.145.925c.072.116.305.305.937.38c.609.073 1.44.018 2.455-.183c2.02-.4 4.613-1.351 7.28-2.772c2.667-1.42 4.85-3.015 6.23-4.423c.694-.707 1.15-1.334 1.377-1.836c.233-.515.167-.75.107-.844c-.07-.112-.289-.294-.883-.374c-.542-.072-1.272-.041-2.163.112L16.87 5.656c.338-.101.658-.17.842-.203"/></svg></a><a class="nav-item" title="关于" href="/about/" style="color:#F44336"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m13.629 20.472l-.542.916c-.483.816-1.69.816-2.174 0l-.542-.916c-.42-.71-.63-1.066-.968-1.262c-.338-.197-.763-.204-1.613-.219c-1.256-.021-2.043-.098-2.703-.372a5 5 0 0 1-2.706-2.706C2 14.995 2 13.83 2 11.5v-1c0-3.273 0-4.91.737-6.112a5 5 0 0 1 1.65-1.651C5.59 2 7.228 2 10.5 2h3c3.273 0 4.91 0 6.113.737a5 5 0 0 1 1.65 1.65C22 5.59 22 7.228 22 10.5v1c0 2.33 0 3.495-.38 4.413a5 5 0 0 1-2.707 2.706c-.66.274-1.447.35-2.703.372c-.85.015-1.275.022-1.613.219c-.338.196-.548.551-.968 1.262" opacity=".5"/><path fill="currentColor" d="M10.99 14.308c-1.327-.978-3.49-2.84-3.49-4.593c0-2.677 2.475-3.677 4.5-1.609c2.025-2.068 4.5-1.068 4.5 1.609c0 1.752-2.163 3.615-3.49 4.593c-.454.335-.681.502-1.01.502c-.329 0-.556-.167-1.01-.502"/></svg></a></nav>
+</div>
+<div class="widgets">
+<div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div>
+
+
+
+<widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2025/11/08/%E7%B2%89%E8%89%B2%E7%B4%A7%E8%BA%AB%E9%9C%B2%E8%82%A9%E5%90%8A%E5%B8%A6%E6%90%AD%E9%85%8D%E8%A1%AC%E8%A1%AB%E7%9A%84%E5%A6%B9%E5%AD%90/"><span class="title">粉色紧身露肩吊带搭配衬衫的妹子</span></a><a class="item title" href="/2025/12/04/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E8%AE%A4%E7%9F%A5%E9%9D%A9%E5%91%BD%EF%BC%9A%E5%BD%93AI%E4%BB%8E%E2%80%9C%E5%89%AF%E9%A9%BE%E9%A9%B6%E2%80%9D%E8%B5%B0%E5%90%91%E2%80%9C%E4%BB%A3%E7%90%86%E4%BA%BA%E2%80%9D/"><span class="title">第二次认知革命：当AI从“副驾驶”走向“代理人”</span></a><a class="item title" href="/2025/11/23/%E7%89%B9%E6%96%AF%E6%8B%89%E9%A9%BE%E9%A9%B6%E8%BE%85%E5%8A%A9%E7%B3%BB%E7%BB%9F%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90/"><span class="title">特斯拉驾驶辅助系统深度解析</span></a><a class="item title" href="/2025/11/06/White-shirt-tie-short-haired-girl/"><span class="title">White-shirt tie short-haired girl</span></a><a class="item title" href="/2025/11/01/deep-white-plunging-V-neck-lace-sequined-evening-gown/"><span class="title">deep white plunging V-neck lace sequined evening gown</span></a><a class="item title" href="/2025/11/26/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E6%90%9E%E6%87%82JSON%E6%8F%90%E7%A4%BA%E8%AF%8D%EF%BC%81JSON%E6%8F%90%E7%A4%BA%E8%AF%8D%EF%BC%9A%E8%AE%A9AI%E7%A7%92%E6%87%82%E4%BD%A0/"><span class="title">一文带你搞懂JSON提示词！JSON提示词：让AI秒懂你</span></a><a class="item title" href="/2025/10/31/The-Range-Rover%E2%80%99s-front-door-is-slightly-open-flooding-the-interior-with-brilliant-midday-sunlight/"><span class="title">The Range Rover’s front door is slightly open, flooding the interior with brilliant midday sunlight</span></a><a class="item title" href="/2025/10/31/This-is-absolutely-beautiful-Gemini-Nano-Banana-Prompt/"><span class="title">This is absolutely beautiful Gemini Nano Banana Prompt</span></a><a class="item title" href="/2025/11/01/Transforma-tu-foto-en-un-selfie-ultra-realista-con-Sonic-y-Mario/"><span class="title">Transforma tu foto en un selfie ultra-realista con Sonic y Mario</span></a><a class="item title" href="/2025/11/01/Paired-with-light-blue-high-waisted-flared-jeans-and-a-pair-of-clean-white-sneakers/"><span class="title">Paired with light blue high-waisted flared jeans and a pair of clean white sneakers</span></a></div></widget>
+</div>
+
+</div></aside><div class="l_main" id="main">
+
+
+
+
+
+<div class="article banner top"><img class="lazy bg" data-src="https://img.hotker.com/file/1764169032161_Generated_Image_November_26__2025_-_10_53PM.jpeg">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E7%9F%A5%E8%AF%86%E5%BA%93/">知识库</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2025-11-26T14:40:00.000Z">2025-11-26</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2026-01-12T15:31:06.572Z">2026-01-12</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>一文带你搞懂JSON提示词！JSON提示词：让AI秒懂你</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><p>为什么AI大佬都在用JSON提示词<br>一文带你搞懂JSON提示词！</p>
+<p>你辛辛苦苦调了1天的Prompt提示词，<br>小作文写得声泪俱下，AI还是时而听话时而犯浑，输出格式崩得像车祸现场，你气得想砸键盘。😭</p>
+<p>而旁边的家伙，随手贴了1段看着像乱码的 JSON 提示词，丢进去，3秒钟，AI像被打了鸡血一样：<br>角色稳得一批 ，格式严丝合缝 ，再难的任务也一次过<br>甚至连标点符号都跟你要求的一模一样。</p>
+<p>不会 JSON 提示词，就好比你在国内不会说“普通话”<br>就像 2022年还用“请帮我写一篇作文”去驱动 GPT-4；<br>会了 JSON 提示词，你才算真正摸到大模型的 G 点。</p>
+<p>这1小段语法，决定了你是一直被模型牵着鼻子走，还是反过来把模型摁在地上摩擦。<br>想让Gemini、ChatGPT、Claude、、Grok 对你言听计从、百发百中？先学会用它们的母语跟它们说话。<br>那门语言就叫：JSON。<br>（JSON发音 &#x2F;ˈdʒeɪ.sən&#x2F; 读音类似 J + son）</p>
+<p>一、什么是JSON简单说:<br>JSON 就是一种”填表格式”,专门用来给电脑传数据的。</p>
+<p>举个例子,如果你要给电脑介绍一个人,普通话可能这么说:<br>“张三今年28岁,未婚,喜欢游戏、摄影和健身,住在广东深圳。”</p>
+<p>而 JSON 格式会写成这样:<br>{<br>  “name”: “张三”,<br>  “age”: 28,<br>  “isMarried”: false,<br>  “hobbies”: [“游戏”, “摄影”, “健身”],<br>  “address”: {<br>    “province”: “广东”,<br>    “city”: “深圳”<br>  }<br>}</p>
+<p>看起来复杂?其实规则很简单:</p>
+<p>用 大括号 {} 装一堆信息<br>用 “名字”: “内容” 的格式写每一项(名字和内容用冒号隔开)<br>多项之间用 逗号 分开<br>方括号 [] 装列表(比如多个爱好)</p>
+<p>为什么电脑喜欢这个格式?</p>
+<p>因为它像填表一样清清楚楚——每个信息都有标签(“name”、”age”), 电脑看一眼就知道哪个是名字、哪个是年龄,不会搞混。</p>
+<p>今天(2025 年),99% 的互联网 API 返回的都是 JSON 格式。<br>可以说,JSON 是互联网的”普通话”——你会了它,就能和全世界的程序对话。😍</p>
+<p>二、那什么是”JSON 提示词”?<br>一句话:就是用 JSON 格式来写给 AI 的指令。</p>
+<p>普通提示词——像说话一样,一股脑全倒出来。<br>“你是一个尖酸刻薄的吐槽机器人,用东北话狠狠地嘲讽用户说的每一句话,语气要阴阳怪气,绝对不能礼貌。”</p>
+<p>但如果用 JSON 提示词,会写成这样:</p>
+<p>{<br>  “role”: “尖酸刻薄的东北吐槽机器人”,<br>  “personality”: “阴阳怪气、毒舌、从不礼貌”,<br>  “response_style”: {<br>    “language”: “纯正东北话”,<br>    “tone”: “极度阴阳怪气”,<br>    “length”: “短句为主,50字以内”,<br>    “forbidden”: [“礼貌用语”, “鼓励”, “安慰”]<br>  },<br>  “examples”: [<br>    {“user”: “今天天气真好啊”, “assistant”: “好个屁!老阴天了你眼瞎啊?”},<br>    {“user”: “我今天很开心”, “assistant”: “开心?开心你大爷,显摆啥玩意儿呢?”}<br>  ],<br>  “output_format”: “纯文本,不要解释、不要 markdown”<br>}</p>
+<p>看出区别了吗?<br>普通提示词像”聊天”, 信息挤在一起,AI 有时会漏掉细节<br>JSON 提示词像”填表”, 每个要求都有明确标签,AI 一眼就能看清所有规则。</p>
+<p>三、用 JSON 提示词有什么好处?</p>
+<ol>
+<li><p>AI 解析更准确<br>同样的任务,JSON 提示词比纯文本提示词的成功率高 20%~60%,尤其在Gemini、ChatGPT、Claude 这些模型上效果最明显。</p>
+</li>
+<li><p>强制 AI 按格式输出<br>像学扣子、N8N、Dify 等工作流必备<br>你想让 AI 返回一个标准 JSON 格式的数据(比如做数据处理、批量生成内容),用 JSON 提示词几乎能 100% 保证 AI 输出合法的 JSON——纯文本指令做不到这点。</p>
+</li>
+<li><p>一目了然,容易修改<br>当你的指令很复杂(比如多个角色、多个规则)时,JSON 格式把每个部分分得清清楚楚:<br>role:角色是谁<br>task:要干什么<br>rules:有哪些规则<br>examples:举几个例子<br>output_format:输出什么格式<br>要改哪个部分,直接找对应的标签改就行,不用在一大段文字里翻来翻去。</p>
+</li>
+<li><p>减少 AI “幻觉”和遗漏<br>AI 看到明确的标签(比如 “strict_rules”)会更认真对待;纯文本里写”请一定要……”,AI 经常会忽略。</p>
+</li>
+</ol>
+<p>JSON 提示词是(2025 年)效果最稳定、控制力最强的提示词格式,已经成为主流标配。</p>
+<p>四、怎么上手? 3 步学会写 JSON 提示词</p>
+<p>第 1步：记住最简模板(90% 场景够用)<br>{<br>  “system”: “你的角色和基本要求”,<br>  “task”: “本次具体要做什么”,<br>  “rules”: [“规则1”, “规则2”, “永远不要XXX”],<br>  “output_format”: “要输出什么格式(如:纯文本、JSON、markdown)”<br>}<br>举例:让 AI 写一篇小红书种草文<br>{<br>  “system”: “你是一个小红书博主,擅长写种草笔记,语气亲切自然”,<br>  “task”: “写一篇推荐蓝牙耳机的种草文,300字左右”,<br>  “rules”: [<br>    “开头必须有吸引人的标题”,<br>    “要有真实使用感受”,<br>    “结尾引导互动(比如问’你们用什么耳机?’)”,<br>    “不要出现明显的广告词”<br>  ],<br>  “output_format”: “纯文本,不要代码块”<br>}</p>
+<p>第 2 步: 加上示例让 AI 更懂你(进阶版)<br>如果你对风格要求很具体,可以加一个 examples 字段,<br>直接给 AI 看几个例子:</p>
+<p>{<br>  “role”: “毒舌网友”,<br>  “tone”: “阴阳怪气”,<br>  “language”: “带网络梗的中文”,<br>  “constraints”: [<br>    “每句话都要嘲讽”,<br>    “回复不超过 50 字”<br>  ],<br>  “examples”: [<br>    {“user”: “我今天好开心”, “assistant”: “开心?开心就对了,毕竟无知者无畏嘛”},<br>    {“user”: “这个电影太好看了”, “assistant”: “好看?你审美是体育老师教的吧”}<br>  ],<br>  “output_format”: “只输出回复内容,不要解释”<br>}</p>
+<p>第 3 步:直接套用场景模板<br>以下是几个常用场景的完整模板,拿来直接改改就能用:<br>场景 1:翻译专家<br>{<br>  “role”: “专业翻译”,<br>  “source_language”: “英文”,<br>  “target_language”: “中文”,<br>  “style”: “信达雅,符合中文阅读习惯”,<br>  “rules”: [<br>    “专有名词保留英文”,<br>    “不要逐字翻译,要意译”<br>  ],<br>  “input”: “要翻译的英文内容”,<br>  “output_format”: “纯文本中文”<br>}<br>场景 2:文案改写<br>{<br>  “task”: “把一段文案改得更吸引人”,<br>  “original_text”: “原文内容”,<br>  “target_style”: “小红书风格,轻松活泼”,<br>  “requirements”: [<br>    “保留核心信息”,<br>    “增加 emoji”,<br>    “控制在 100 字以内”<br>  ],<br>  “output_format”: “直接输出改写后的文案”<br>}</p>
+<p>场景 3:数据提取<br>{<br>  “task”: “从一段文本中提取关键信息”,<br>  “input_text”: “一大段文字…”,<br>  “extract_fields”: [“人名”, “时间”, “地点”, “事件”],<br>  “output_format”: {<br>    “type”: “json”,<br>    “schema”: {<br>      “person”: “string”,<br>      “time”: “string”,<br>      “location”: “string”,<br>      “event”: “string”<br>    }<br>  }<br>}<br>第五、最简单粗暴的方法，<br>直接让AI把你的提示词改成JSON格式！！<br>在你的提示词后面加上这句话⬇️<br>“请把我这段提示词改变为JSON格式。”😉</p>
+<p>五、新手常见问题<br>Q1:我不会编程,能用 JSON 提示词吗?<br>当然能! JSON 只是一种”填表格式”,不需要编程基础。记住几个规则就行:<br>大括号 {} 包整体<br>每行写成 “标签”: “内容” 的格式<br>多行之间用逗号隔开<br>中文、英文都可以</p>
+<p>Q2:我直接复制上面的模板,改几个字就能用?<br>完全可以! 上面的模板就是给你直接抄的。你只需要:<br>复制一个最接近你需求的模板<br>把里面的内容改成你的实际需求<br>粘贴给 AI,就能用了</p>
+<p>Q3:JSON 提示词哪里都能用吗?</p>
+<p>基本上 2024~2025 年的主流大模型都支持,包括:<br>Gemini、ChatGPT、Claude 、Grok、DeepSeek、豆包等</p>
+<p>Q4:我写的 JSON 格式不对怎么办?<br>可以用在线工具检查:搜索”JSON 格式化”或”JSON 校验”,把你写的内容粘贴进去,工具会告诉你哪里错了。<br>常见错误:<br>忘记加引号:{name: “张三”} ❌<br>应该是 {“name”: “张三”} ✅<br>最后一项多了逗号:{“a”: 1, “b”: 2,}<br>❌ 应该是 {“a”: 1, “b”: 2} ✅<br>中英文符号混用:中文逗号 、<br>❌ 应该用英文逗号 , ✅</p>
+<p>六、为什么 2025 年要学 JSON 提示词?<br>1句话:<br>2025 年不会写 JSON 提示词 &#x3D; 2023 年不会写提示词。<br>JSON 提示词已经是使用大模型的”标配技能”了。<br>它能让你:<br>✅ 让 AI 更听话:成功率提升 20%~60%<br>✅ 节省时间:不用反复调试,一次性把要求说清楚<br>✅ 解锁高级玩法:批量生成、数据提取、多角色对话……都需要 JSON<br>✅ 显得专业:懂 JSON 提示词,就像懂快捷键一样,效率直接拉满</p>
+<p>建议:<br>以后所有重要任务(不是随便聊天那种),都用 JSON 格式写提示词。<br>哪怕只是简单任务,也能大幅降低”翻车”概率。</p>
+<p>现在就试试吧!复制上面的模板,改成你的需求,体验一下 AI”秒懂”你的感觉。</p>
+<p>你用过JSON 提示词试了吗?效果怎么样?<br>如果这篇文章帮到你了， 点赞收藏方便查找！<br>更多AI实用技巧持续更新中,记得关注我🤝咱们一起把 AI 用得更溜!</p>
+</article>
+<div class="article-footer">
+    <section id="license">
+      <div class="header"><span>许可协议</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div>
+    </section>
+    
+
+</div>
+
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2025/12/03/Hyper-realistic%20close-up%20portrait/">Hyper-realistic close-up portrait</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2025/11/26/2025-11-26-14%E6%9D%A1AI%E6%B6%A6%E8%89%B2%E6%8C%87%E4%BB%A4%E6%96%87%E7%AB%A0%E8%B4%A8%E9%87%8F%E7%AB%8B%E5%88%BB%E6%8F%90%E5%8D%87/">14 条 AI 润色指令，文章质量一键拉满</a></div></section></div>
+
+<div class="related-wrap" id="related-posts">
+    <section class='header'>
+      <div class='title cap theme'>您可能感兴趣的文章</div>
+    </section>
+    <section class='body'>
+    <div class="related-posts"><a class="item" href="/2025/11/24/2025-11-24-Create-a-professional-OOTD-fashion-collage-layout-in-magazine-editorial-style/" title="Create a professional OOTD fashion collage layout in magazine editorial style"><span class="title">Create a professional OOTD fashion collage layout in magazine editorial style</span></a><a class="item" href="/2025/11/24/2025-11-24-如何打造-100-字以内的极简提示词？/" title="如何打造 100 字以内的极简提示词？"><span class="title">如何打造 100 字以内的极简提示词？</span></a><a class="item" href="/2025/11/24/A-cinematic-film-portrait/" title="A cinematic film portrait"><span class="title">A cinematic film portrait</span></a><a class="item" href="/2025/11/24/2025-11-24-A-serene,-dreamy-close-up-portrait-of-a-young-East-Asian-woman-with-a-gentle/" title="A serene, dreamy close-up portrait of a young East Asian woman with a gentle"><span class="title">A serene, dreamy close-up portrait of a young East Asian woman with a gentle</span></a><a class="item" href="/2025/11/24/2025-11-24-AI-生图会迎来新王么？看看-Hotker-带你实测/" title="AI 生图会迎来新王么？看看 Hotker 带你实测"><span class="title">AI 生图会迎来新王么？看看 Hotker 带你实测</span></a></div></section></div>
+
+
+  <div class="related-wrap md-text" id="comments">
+    <section class='header cmt-title cap theme'>
+      <p>快来参与讨论吧~</p>
+
+    </section>
+    <section class='body cmt-body artalk'>
+      
+
+<div class="artalk with-fancybox" id="artalk_container"><svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg></div>
+    </section>
+  </div>
+
+
+
+<footer class="page-footer footnote"><hr><div class="text"><script defer src="https://cloud.umami.is/script.js" data-website-id="6ca02e28-5fd2-42cb-a31f-f7bc6c63a0ed"></script>
+</div></footer>
+<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
+</aside><div class='float-panel'>
+  <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
+  </button>
+  <button type='button' style='display:none' class='mobile-only leftbar-toggle mobile' onclick='sidebar.leftbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg>
+  </button>
+</div>
+</div><div class="scripts">
+
+
+<script type="text/javascript">
+  window.canonical = {"originalHost":null,"officialHosts":["localhost"],"encoded":""};
+  const ctx = {
+    date_suffix: {
+      just: `刚刚`,
+      min: `分钟前`,
+      hour: `小时前`,
+      day: `天前`,
+    },
+    root : `/`,
+    tag_plugins: {
+      chat: Object.assign({"api":"https://siteinfo.listentothewind.cn/api/v1"}),
+    }
+  };
+
+  // required plugins (only load if needs)
+  if (`local_search`) {
+    ctx.search = {};
+    ctx.search.service = `local_search`;
+    if (ctx.search.service == 'local_search') {
+      let service_obj = Object.assign({}, `{"field":"all","path":"/search.json","content":true,"skip_search":null,"sort":"-date"}`);
+      ctx.search[ctx.search.service] = service_obj;
+    }
+  }
+  const def = {
+    avatar: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/3442075.svg`,
+    cover: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/cover/76b86c0226ffd.svg`,
+    loading: `https://api.iconify.design/eos-icons:three-dots-loading.svg?color=%231cd0fd`,
+  };
+  const deps = {
+    jquery: `https://gcore.jsdelivr.net/npm/jquery@3.7/dist/jquery.min.js`,
+    marked: `https://gcore.jsdelivr.net/npm/marked@13.0/lib/marked.umd.min.js`,
+    lazyload: `/%5Bobject%20Object%5D`
+  }
+  
+
+</script>
+
+<script type="text/javascript">
+  
+  function RunItem() {
+    this.list = []; // 存放回调函数
+    this.start = () => {
+      for (var i = 0; i < this.list.length; i++) {
+        this.list[i].run();
+      }
+    };
+    this.push = (fn, name, setRequestAnimationFrame = true) => {
+      let myfn = fn
+      if (setRequestAnimationFrame) {
+        myfn = () => {
+          utils.requestAnimationFrame(fn)
+        }
+      }
+      var f = new Item(myfn, name);
+      this.list.push(f);
+    };
+    this.remove = (name) => {
+      for (let index = 0; index < this.list.length; index++) {
+        const e = this.list[index];
+        if (e.name == name) {
+          this.list.splice(index, 1);
+        }
+      }
+    }
+    // 构造一个可以run的对象
+    function Item(fn, name) {
+      // 函数名称
+      this.name = name || fn.name;
+      // run方法
+      this.run = () => {
+        try {
+          fn()
+        } catch (error) {
+          console.log(error);
+        }
+      };
+    }
+  }
+
+  const utils = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    css: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    js: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')) {
+        src = ctx.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function () {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    jq: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        utils.js(deps.jquery).then(fn)
+      } else {
+        fn()
+      }
+    },
+
+    onLoading: (el) => {
+      if (el) {
+        $(el).append('<div class="loading-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" stroke-opacity=".3" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="1.3s" values="60;0"/></path><path stroke-dasharray="15" stroke-dashoffset="15" d="M12 3C16.9706 3 21 7.02944 21 12"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="15;0"/><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></path></g></svg></div>');
+      }
+    },
+    onLoadSuccess: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap').remove();
+      }
+    },
+    onLoadFailure: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap svg').remove();
+        $(el).find('.loading-wrap').append('<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M12 3L21 20H3L12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M12 10V14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle></svg>');
+        $(el).find('.loading-wrap').addClass('error');
+      }
+    },
+    request: (el, url, callback, onFailure) => {
+      const maxRetry = 3;
+      let retryCount = 0;
+
+      return new Promise((resolve, reject) => {
+        const load = () => {
+          utils.onLoading?.(el);
+
+          let timedOut = false;
+          const timeout = setTimeout(() => {
+            timedOut = true;
+            console.warn('[request] 超时:', url);
+
+            if (++retryCount >= maxRetry) {
+              utils.onLoadFailure?.(el);
+              onFailure?.();
+              reject('请求超时');
+            } else {
+              setTimeout(load, 1000);
+            }
+          }, 5000);
+
+          fetch(url).then(resp => {
+            if (timedOut) return;
+            clearTimeout(timeout);
+
+            if (!resp.ok) throw new Error('响应失败');
+            return resp;
+          }).then(data => {
+            if (timedOut) return;
+            utils.onLoadSuccess?.(el);
+            callback(data);
+            resolve(data);
+          }).catch(err => {
+            clearTimeout(timeout);
+            console.warn('[request] 错误:', err);
+
+            if (++retryCount >= maxRetry) {
+              utils.onLoadFailure?.(el);
+              onFailure?.();
+              reject(err);
+            } else {
+              setTimeout(load, 1000);
+            }
+          });
+        };
+
+        load();
+      });
+    },
+    requestWithoutLoading: (url, options = {}, maxRetry = 2, timeout = 5000) => {
+      return new Promise((resolve, reject) => {
+        let retryCount = 0;
+
+        const tryRequest = () => {
+          let timedOut = false;
+          const timer = setTimeout(() => {
+            timedOut = true;
+            if (++retryCount > maxRetry) reject('timeout');
+            else tryRequest();
+          }, timeout);
+
+          fetch(url, options)
+            .then(resp => {
+              clearTimeout(timer);
+              if (!resp.ok) throw new Error('bad response');
+              resolve(resp);
+            })
+            .catch(err => {
+              clearTimeout(timer);
+              if (++retryCount > maxRetry) reject(err);
+              else setTimeout(tryRequest, 500);
+            });
+        };
+
+        tryRequest();
+      });
+    },
+    /********************** requestAnimationFrame ********************************/
+    // 1、requestAnimationFrame 会把每一帧中的所有 DOM 操作集中起来，在一次重绘或回流中就完成，并且重绘或回流的时间间隔紧紧跟随浏览器的刷新频率，一般来说，这个频率为每秒60帧。
+    // 2、在隐藏或不可见的元素中，requestAnimationFrame 将不会进行重绘或回流，这当然就意味着更少的的 cpu，gpu 和内存使用量。
+    requestAnimationFrame: (fn) => {
+      if (!window.requestAnimationFrame) {
+        window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame;
+      }
+      window.requestAnimationFrame(fn)
+    },
+    dark: {},
+  };
+
+  // utils.dark.mode 当前模式 dark or light
+  // utils.dark.toggle() 暗黑模式触发器
+  // utils.dark.push(callBack[,"callBackName"]) 传入触发器回调函数
+  utils.dark.method = {
+    toggle: new RunItem(),
+  };
+  utils.dark = Object.assign(utils.dark, {
+    push: utils.dark.method.toggle.push,
+  });
+</script>
+<script>
+  const sidebar = {
+    leftbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    rightbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('rightbar');
+        l_body.removeAttribute('leftbar');
+      }
+    },
+    dismiss: () => {
+      if (l_body) {
+        l_body.removeAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    toggleTOC: () => {
+      document.querySelector('#data-toc').classList.toggle('collapse');
+    }
+  }
+</script>
+<script type="text/javascript">
+  (() => {
+    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
+    for (const tagSwitcher of tagSwitchers) {
+      tagSwitcher.addEventListener('click', (e) => {
+        const parent = e.target.closest('.tag-subtree.parent-tag')
+        parent.classList.toggle('expanded')
+        e.preventDefault()
+      })
+    }
+
+    // Get active tag from query string, then activate it.
+    const urlParams = new URLSearchParams(window.location.search)
+    const activeTag = urlParams.get('tag')
+    if (activeTag) {
+      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
+      if (tag) {
+        tag.querySelector('a').classList.add('active')
+        
+        while (tag) {
+          tag.classList.add('expanded')
+          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
+        }
+      }
+    }
+  })()
+</script>
+
+<script async src="https://gcore.jsdelivr.net/npm/vanilla-lazyload@19.1/dist/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazy",
+    callback_loaded: (el) => {
+      el.classList.add('loaded');
+      const wrapper = el.closest('.lazy-box');
+      const icon = wrapper?.querySelector('.lazy-icon');
+      if (icon) icon.remove();
+    }
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    window.lazyLoadInstance?.update();
+  });
+
+  window.wrapLazyloadImages = (container) => {
+    if (typeof container === 'string') {
+      container = document.querySelector(container);
+    }
+    if (!container) return;
+    
+    const images = container.querySelectorAll('img');
+    images.forEach((img) => {
+      if (img.classList.contains('lazy')) return;
+
+      const src = img.getAttribute('src');
+      if (!src) return;
+
+      const wrapper = document.createElement('div');
+      wrapper.className = 'lazy-box';
+
+      const newImg = img.cloneNode();
+      newImg.removeAttribute('src');
+      newImg.setAttribute('data-src', src);
+      newImg.classList.add('lazy');
+
+      const icon = document.createElement('div');
+      icon.className = 'lazy-icon';
+      if (def.loading) {
+        icon.style.backgroundImage = `url("${def.loading}")`;
+      }
+
+      wrapper.appendChild(newImg);
+      wrapper.appendChild(icon);
+
+      img.replaceWith(wrapper);
+    });
+
+    // 通知 LazyLoad 更新
+    if (window.lazyLoadInstance?.update) {
+      window.lazyLoadInstance.update();
+    }
+  }
+  
+</script>
+
+<!-- required -->
+<script src="/js/main.js?v=1.33.1" defer></script>
+
+<script type="text/javascript">
+  const applyTheme = (theme) => {
+    if (theme === 'auto') {
+      document.documentElement.removeAttribute('data-theme')
+    } else {
+      document.documentElement.setAttribute('data-theme', theme)
+    }
+
+    // applyThemeToGiscus(theme)
+  }
+
+  // FIXME: 这会导致无法使用 preferred_color_scheme 以外的主题
+  const applyThemeToGiscus = (theme) => {
+    // theme = theme === 'auto' ? 'preferred_color_scheme' : theme
+    const cmt = document.getElementById('giscus')
+    if (cmt) {
+      // This works before giscus load.
+      cmt.setAttribute('data-theme', theme)
+    }
+
+    const iframe = document.querySelector('#comments > section.giscus > iframe')
+    if (iframe) {
+      // This works after giscus loaded.
+      const src = iframe.src
+      const newSrc = src.replace(/theme=[\w]+/, `theme=${theme}`)
+      iframe.src = newSrc
+    }
+  }
+
+  const switchTheme = () => {
+    // light -> dark -> auto -> light -> ...
+    const currentTheme = document.documentElement.getAttribute('data-theme')
+    let newTheme;
+    switch (currentTheme) {
+      case 'light':
+        newTheme = 'dark'
+        break
+      case 'dark':
+        newTheme = 'auto'
+        break
+      default:
+        newTheme = 'light'
+    }
+    applyTheme(newTheme)
+    window.localStorage.setItem('Stellar.theme', newTheme)
+    utils.dark.mode = newTheme === 'auto' ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : newTheme;
+    utils.dark.method.toggle.start();
+
+    const messages = {
+      light: `切换到浅色模式`,
+      dark: `切换到深色模式`,
+      auto: `切换到跟随系统配色`,
+    }
+    hud?.toast?.(messages[newTheme])
+  }
+
+  (() => {
+    // Apply user's preferred theme, if any.
+    const theme = window.localStorage.getItem('Stellar.theme')
+    if (theme !== null) {
+      applyTheme(theme)
+    } else {
+      utils.dark.mode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    utils.dark.method.toggle.start();
+  })()
+</script>
+
+
+<!-- optional -->
+
+  <script type="module">
+  const el = document.getElementById('artalk_container');
+  util.viewportLazyload(el, load_artalk, false);
+
+  function load_artalk() {
+    if (!el) return;
+    utils.css('https://unpkg.com/artalk@2.9/dist/Artalk.css');
+    utils.js('https://unpkg.com/artalk@2.9/dist/Artalk.js', {defer: true}).then(function () {
+      // 监听 Artalk 事件
+      // FIXME: Artalk开启了懒加载会导致评论输入预览框里的图也变成data-src，导致看不到图
+      // Artalk.use((ctx) => {
+      //   ctx.on('list-loaded', () => window.lazyLoadInstance?.update())
+      // })
+      const path = el.getAttribute('comment_id') ?? decodeURI(window.location.pathname);
+      const artalk = Artalk.init({
+        el: '#artalk_container',
+        pageKey: path,
+        pageTitle: '一文带你搞懂JSON提示词！JSON提示词：让AI秒懂你',
+        server: 'https://message.hotker.com',
+        site: 'hotker-blog',
+        darkMode: 'auto',
+        
+      });
+    });
+  }
+</script>
+
+
+
+<script defer>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":"https://site-info-api.hotker.com/api/v1?url={href}"},"ghinfo":{"js":"/js/services/ghinfo.js"},"rating":{"js":"/js/services/rating.js","api":"https://star-vote.xaox.cc/api/rating"},"vote":{"js":"/js/services/vote.js","api":"https://star-vote.xaox.cc/api/vote"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"friends_and_posts":{"js":"/js/services/friends_and_posts.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"voice":{"js":"/js/plugins/voice.js"},"video":{"js":"/js/plugins/video.js"},"download-file":{"js":"/js/plugins/download-file.js"},"twikoo":{"js":"/js/services/twikoo_latest_comment.js"},"waline":{"js":"/js/services/waline_latest_comment.js"},"artalk":{"js":"/js/services/artalk_latest_comment.js"},"giscus":{"js":"/js/services/giscus_latest_comment.js"},"contributors":{"edit_this_page":{"_posts/":null,"wiki/stellar/":"https://github.com/xaoxuu/hexo-theme-stellar-docs/blob/main/"},"js":"/js/services/contributors.js"}}`));
+    for (let id of Object.keys(ctx.services)) {
+      const js = ctx.services[id].js;
+      if (id == 'siteinfo') {
+        ctx.cardlinks = document.querySelectorAll('a.link-card[cardlink]');
+        if (ctx.cardlinks?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            setCardLink(ctx.cardlinks);
+          });
+        }
+      } else if (id == 'voice') {
+        ctx.voiceAudios = document.querySelectorAll('.voice>audio');
+        if (ctx.voiceAudios?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            createVoiceDom(ctx.voiceAudios);
+          });
+        }
+      } else if (id == 'video') {
+        ctx.videos = document.querySelectorAll('.video>video');
+        if (ctx.videos?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            videoEvents(ctx.videos);
+          });
+        }
+      } else if (id == 'download-file') {
+        ctx.files = document.querySelectorAll('.file');
+        if (ctx.files?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            downloadFileEvent(ctx.files);
+          });
+        }
+      } else {
+        const els = document.getElementsByClassName(`ds-${id}`);
+        if (els?.length > 0) {
+          utils.jq(() => {
+            if (id == 'timeline' || 'memos' || 'marked') {
+              utils.js(deps.marked).then(function () {
+                utils.js(js, { defer: true });
+              });
+            } else {
+              utils.js(js, { defer: true });
+            }
+          });
+        }
+      }
+    }
+
+    // chat iphone time
+    let phoneTimes = document.querySelectorAll('.chat .status-bar .time');
+
+    if (phoneTimes.length > 0) {
+      NowTime();
+      var date = new Date();
+      var sec = date.getSeconds();
+      var firstAdjustInterval = setInterval(firstAdjustTime, 1000 * (60 - sec));
+    }
+
+    function firstAdjustTime() {
+      NowTime();
+      clearInterval(firstAdjustInterval);
+      setInterval(NowTime, 1000 * 60);
+    }
+
+    function NowTime() {
+      for (let i = 0; i < phoneTimes.length; ++i) {
+        var timeSpan = phoneTimes[i];
+        var date = new Date();
+        var hour = date.getHours();
+        var min = date.getMinutes();
+        timeSpan.innerHTML = check(hour) + ":" + check(min);
+      }
+    };
+
+    function check(val) {
+      if (val < 10) {
+        return ("0" + val);
+      }
+      return (val);
+    }
+
+    // chat quote
+    const chat_quote_obverser = new IntersectionObserver((entries, observer) => {
+      entries.filter((entry) => { return entry.isIntersecting }).sort((a, b) => a.intersectionRect.y !== b.intersectionRect.y ? a.intersectionRect.y - b.intersectionRect.y : a.intersectionRect.x - b.intersectionRect.x).forEach((entry, index) => {
+          observer.unobserve(entry.target);
+          setTimeout(() => {
+            entry.target.classList.add('quote-blink');
+            setTimeout(() => {
+              entry.target.classList.remove('quote-blink');
+            }, 1000);
+          }, Math.max(100, 16) * (index + 1));
+        });
+    });
+
+    var chatQuotes = document.querySelectorAll(".chat .talk .quote");
+    chatQuotes.forEach((quote) => {
+      quote.addEventListener('click', function () {
+        var chatCellDom = document.getElementById("quote-" + quote.getAttribute("quotedCellTag"));
+        if (chatCellDom) {
+          var chatDiv = chatCellDom.parentElement;
+          var mid = chatDiv.clientHeight / 2;
+          var offsetTop = chatCellDom.offsetTop;
+          if (offsetTop > mid - chatCellDom.clientHeight / 2) {
+            chatDiv.scrollTo({
+              top: chatCellDom.offsetTop - mid + chatCellDom.clientHeight / 2,
+              behavior: "smooth"
+            });
+          } else {
+            chatDiv.scrollTo({
+              top: 0,
+              behavior: "smooth"
+            });
+          }
+          chat_quote_obverser.observe(chatCellDom);
+        }
+      });
+    });
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.search = {
+      path: `/search.json`,
+    }
+    utils.js('/js/search/local-search.js', { defer: true });
+  });
+</script><script>
+  window.FPConfig = {
+    delay: 0,
+    ignoreKeywords: [],
+    maxRPS: 5,
+    hoverDelay: 25
+  };
+</script>
+<script defer src="https://gcore.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"></script><script>
+  ctx.fancybox = {
+    selector: `.timenode p>img`,
+    css: `https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css`,
+    js: `https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js`
+  };
+  var selector = '[data-fancybox]:not(.error), .with-fancybox .atk-content img:not([atk-emoticon])';
+  if (ctx.fancybox.selector) {
+    selector += `, ${ctx.fancybox.selector}`
+  }
+  var needFancybox = document.querySelectorAll(selector).length !== 0;
+  if (!needFancybox) {
+    const memos = document.getElementsByClassName('ds-memos');
+    if (memos != undefined && memos.length > 0) {
+      needFancybox = true;
+    }
+    const fancybox = document.getElementsByClassName('with-fancybox');
+    if (fancybox != undefined && fancybox.length > 0) {
+      needFancybox = true;
+    }
+  }
+  if (needFancybox) {
+    utils.css(ctx.fancybox.css);
+    utils.js(ctx.fancybox.js, { defer: true }).then(function () {
+      Fancybox.bind(selector, {
+        hideScrollbar: false,
+        Thumbs: {
+          autoStart: false,
+        },
+        caption: (fancybox, slide) => {
+          return slide.triggerEl.alt || slide.triggerEl.dataset.caption || null
+        }
+      });
+    })
+  }
+</script>
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const swiper_api = document.getElementById('swiper-api');
+    if (swiper_api != undefined) {
+      utils.css(`https://unpkg.com/swiper@10.3/swiper-bundle.min.css`);
+      utils.js(`https://unpkg.com/swiper@10.3/swiper-bundle.min.js`, { defer: true }).then(function () {
+        const effect = swiper_api.getAttribute('effect') || '';
+        var swiper = new Swiper('.swiper#swiper-api', {
+          slidesPerView: 'auto',
+          spaceBetween: 8,
+          centeredSlides: true,
+          effect: effect,
+          rewind: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      })
+    }
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    window.codeElements = document.querySelectorAll('.code');
+    if (window.codeElements.length > 0) {
+      ctx.copycode = {
+        default_text: `Copy`,
+        success_text: `Copied`,
+        toast: `复制成功`,
+      };
+      utils.js('/js/plugins/copycode.js');
+    }
+  });
+</script>
+
+
+<!-- inject -->
+
+</div></body></html>
