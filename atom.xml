@@ -190,11 +190,11 @@
     
     <category term="AI工具" scheme="http://example.com/tags/AI%E5%B7%A5%E5%85%B7/"/>
     
+    <category term="产品设计" scheme="http://example.com/tags/%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1/"/>
+    
     <category term="多模型" scheme="http://example.com/tags/%E5%A4%9A%E6%A8%A1%E5%9E%8B/"/>
     
     <category term="独立开发" scheme="http://example.com/tags/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="产品设计" scheme="http://example.com/tags/%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
@@ -340,11 +340,11 @@
     <category term="AI资讯" scheme="http://example.com/categories/AI%E8%B5%84%E8%AE%AF/"/>
     
     
-    <category term="产品设计" scheme="http://example.com/tags/%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1/"/>
-    
     <category term="AI应用" scheme="http://example.com/tags/AI%E5%BA%94%E7%94%A8/"/>
     
     <category term="塔罗牌" scheme="http://example.com/tags/%E5%A1%94%E7%BD%97%E7%89%8C/"/>
+    
+    <category term="产品设计" scheme="http://example.com/tags/%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1/"/>
     
     <category term="Next.js" scheme="http://example.com/tags/Next-js/"/>
     
@@ -588,9 +588,9 @@
     <category term="AI资讯" scheme="http://example.com/categories/AI%E8%B5%84%E8%AE%AF/"/>
     
     
-    <category term="AI眼镜" scheme="http://example.com/tags/AI%E7%9C%BC%E9%95%9C/"/>
-    
     <category term="联想" scheme="http://example.com/tags/%E8%81%94%E6%83%B3/"/>
+    
+    <category term="AI眼镜" scheme="http://example.com/tags/AI%E7%9C%BC%E9%95%9C/"/>
     
     <category term="CES2026" scheme="http://example.com/tags/CES2026/"/>
     
